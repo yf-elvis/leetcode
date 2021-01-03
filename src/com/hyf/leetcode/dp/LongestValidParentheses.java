@@ -40,7 +40,7 @@ public class LongestValidParentheses {
     }
 
     public static void main(String[] args) {
-        int i = new LongestValidParentheses().longestValidParentheses("(()())");
+        int i = new LongestValidParentheses().longestValidParentheses("()()))(()))(()()()()()()))))((((()))))");
         System.out.println(i);
     }
 }
