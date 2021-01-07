@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @Author huyufei on 2021/1/6
- * @Desc: 分割回文串
+ * @Desc: 分割回文串，求出所有可能的解 DFS+回溯
  */
 public class PalindromePartitioning {
     public List<List<String>> partition(String s) {
@@ -55,7 +55,7 @@ public class PalindromePartitioning {
     }
 
     public static void main(String[] args) {
-        List<List<String>> aab = new PalindromePartitioning().partition("aab");
+        List<List<String>> aab = new PalindromePartitioning().partition("aaa");
         System.out.println(aab);
     }
 
