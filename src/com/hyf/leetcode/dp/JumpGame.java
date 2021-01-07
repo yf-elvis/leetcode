@@ -14,7 +14,7 @@ public class JumpGame {
         dp[0] = true;
         for (int i = 1; i < nums.length; i++) {
             for (int j = 0; j < i; j++) {
-                if (dp[j] && i - j <= nums[j]) {
+                if (dp[j] && j + nums[j] >= i) {
                     dp[i] = true;
                     break;
                 }
@@ -24,7 +24,7 @@ public class JumpGame {
     }
 
     public static void main(String[] args) {
-        boolean b = new JumpGame().canJump(new int[]{3,2,1,0,4});
+        boolean b = new JumpGame().canJump(new int[]{3, 2, 1, 0, 4});
         System.out.println(b);
     }
 }
