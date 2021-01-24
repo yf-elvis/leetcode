@@ -36,7 +36,9 @@ public class PerfectSquares {
 
 
     public static void main(String[] args) {
-        int i = new PerfectSquares().numSquares(13);
-        System.out.println(i);
+//        int i = new PerfectSquares().numSquares(13);
+//        System.out.println(i);
+        String s = Integer.toBinaryString(5);
+        System.out.println(s);
     }
 }
